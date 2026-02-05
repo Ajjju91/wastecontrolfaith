@@ -146,3 +146,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// FAQ Accordion Toggle
+function toggleFAQ(button) {
+    const faqItem = button.closest('.faq-item-accordion');
+    const isActive = faqItem.classList.contains('active');
+    
+    // Close all other FAQ items
+    document.querySelectorAll('.faq-item-accordion.active').forEach(item => {
+        if (item !== faqItem) {
+            item.classList.remove('active');
+            item.querySelector('.faq-question').classList.remove('active');
+        }
+    });
+    
+    // Toggle current item
+    if (isActive) {
+        faqItem.classList.remove('active');
+        button.classList.remove('active');
+    } else {
+        faqItem.classList.add('active');
+        button.classList.add('active');
+    }
+}

@@ -1174,6 +1174,340 @@ section {
     background: #15a03f;
 }
 
+/* ===== ENHANCED KPIs SECTION ===== */
+
+.section-intro {
+    text-align: center;
+    color: var(--dark-gray);
+    font-size: 1.05rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.kpi-detailed-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.kpi-card-detailed {
+    background: linear-gradient(135deg, var(--light-gray) 0%, rgba(29, 185, 84, 0.05) 100%);
+    border-left: 5px solid var(--accent-green);
+    padding: 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.kpi-card-detailed:hover {
+    box-shadow: 0 12px 24px rgba(11, 28, 45, 0.1);
+    transform: translateY(-4px);
+}
+
+.kpi-card-detailed h4 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.kpi-measure {
+    font-size: 0.95rem;
+    color: var(--dark-gray);
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.kpi-importance {
+    font-size: 0.95rem;
+    color: var(--dark-gray);
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.kpi-value {
+    font-size: 0.95rem;
+    color: var(--accent-green);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.kpi-summary-box {
+    background: linear-gradient(135deg, var(--primary) 0%, #1a2f45 100%);
+    color: var(--white);
+    padding: 2.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ===== METHODOLOGY SECTION ===== */
+
+.methodology-section {
+    background: var(--light-gray);
+    padding: 80px 20px;
+}
+
+.methodology-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(11, 28, 45, 0.08);
+}
+
+.step-card:hover {
+    box-shadow: 0 12px 24px rgba(11, 28, 45, 0.15);
+    transform: translateY(-4px);
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: var(--accent-green);
+    color: var(--white);
+    border-radius: 50%;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.step-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.step-card p {
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+.step-outcome {
+    font-weight: 600;
+    color: var(--accent-green);
+    font-size: 0.9rem;
+}
+
+/* ===== CASE STUDIES SECTION ===== */
+
+.case-studies-section {
+    padding: 80px 20px;
+    background: var(--white);
+}
+
+.case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.case-study-card {
+    background: var(--light-gray);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.case-study-card:hover {
+    box-shadow: 0 12px 24px rgba(11, 28, 45, 0.15);
+    transform: translateY(-4px);
+}
+
+.case-study-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.case-study-client,
+.case-study-detail {
+    font-size: 0.95rem;
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+}
+
+.case-study-challenge,
+.case-study-actions,
+.case-study-results {
+    margin-top: 1.5rem;
+}
+
+.case-study-challenge h4,
+.case-study-actions h4,
+.case-study-results h4 {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    color: var(--accent-green);
+    margin-bottom: 0.8rem;
+}
+
+.case-study-actions ul,
+.case-study-results ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.case-study-actions li,
+.case-study-results li {
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.case-study-challenge p,
+.case-study-actions p,
+.case-study-results p {
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.case-study-quote {
+    font-style: italic;
+    color: var(--accent-green);
+    font-weight: 500;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent-green);
+}
+
+/* ===== EDUCATION SECTION ===== */
+
+.education-section {
+    padding: 80px 20px;
+    background: var(--light-gray);
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.education-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(11, 28, 45, 0.08);
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    box-shadow: 0 12px 24px rgba(11, 28, 45, 0.15);
+    transform: translateY(-4px);
+}
+
+.education-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.education-card p,
+.education-card ul {
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+.education-card ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.education-card li {
+    margin-bottom: 0.5rem;
+}
+
+.hierarchy-list p {
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+}
+
+.hierarchy-list p strong {
+    color: var(--primary);
+}
+
+.hierarchy-note {
+    background: rgba(29, 185, 84, 0.1);
+    padding: 1rem;
+    border-left: 3px solid var(--accent-green);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    color: var(--primary);
+}
+
+.best-practices-box {
+    background: linear-gradient(135deg, var(--primary) 0%, #1a2f45 100%);
+    color: var(--white);
+    padding: 3rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.best-practices-box h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.best-practices-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.practice {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 3px solid var(--accent-green);
+}
+
+.practice h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: var(--accent-green);
+}
+
+.practice p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95);
+}
+
 /* ===== RESPONSIVE PRICING & FAQ ===== */
 
 @media (max-width: 768px) {
@@ -1198,6 +1532,34 @@ section {
 
     .page-subheadline {
         font-size: 16px;
+    }
+
+    .kpi-detailed-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .methodology-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .case-studies-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .best-practices-list {
+        grid-template-columns: 1fr;
+    }
+
+    .kpi-summary-box {
+        padding: 1.5rem;
+    }
+
+    .best-practices-box {
+        padding: 2rem;
     }
 }
 
@@ -1226,5 +1588,47 @@ section {
 
     .category-headline {
         font-size: 20px;
+    }
+
+    .section-headline {
+        font-size: 1.8rem;
+    }
+
+    .section-intro {
+        font-size: 0.95rem;
+    }
+
+    .kpi-card-detailed {
+        padding: 1.5rem;
+    }
+
+    .kpi-card-detailed h4 {
+        font-size: 1.1rem;
+    }
+
+    .step-card {
+        padding: 1.5rem;
+    }
+
+    .case-study-card {
+        padding: 1.5rem;
+    }
+
+    .education-card {
+        padding: 1.5rem;
+    }
+
+    .practice {
+        padding: 1rem;
+    }
+
+    .methodology-section,
+    .case-studies-section,
+    .education-section {
+        padding: 50px 20px;
+    }
+
+    .best-practices-box {
+        padding: 1.5rem;
     }
 }
